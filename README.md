@@ -19,4 +19,8 @@ POST /user/resgister  - body(email,password)
 ```bash
 POST /user/login  - body(email,password)
 ```
-
+### Form Submission Routes
+- Predict COVID-19 risk based on user input
+```bash
+POST /form/ - header("token": <jwt token received after login>) - body(symptoms, travelHistory, suspectContact)
+```
